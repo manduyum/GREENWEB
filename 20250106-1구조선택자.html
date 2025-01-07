@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{border: 3px solid black; padding: 20px;}
+        .box:nth-child(2){color: red;}
+        .box:nth-child(8){color: blue;}
+        .box:first-child{border-color: brown;}
+        .box:last-child{border-color: aqua;}
+        .box:nth-child(2n){background-color: antiquewhite;}
+        .box:nth-child(2n-1){background-color: lightpink;}
+    </style>
+</head>
+<body>
+    <h1>박스</h1>
+    <div class="group">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+</body>
+</html>

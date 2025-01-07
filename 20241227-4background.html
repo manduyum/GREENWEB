@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        .box{border: 10px solid black; margin: 100px; height: 700px;}
+         /* 패턴처럼 사용할 때 */
+        .box1{background-color: gold;background-image: url(img1223/1.png);}
+        .box2{background-image: url(img1223/1.png); background-repeat: no-repeat;}
+        .box3{background-image: url(img1223/1.png); background-repeat: repeat-x;}
+        .box4{background-image: url(img1223/1.png); background-size: 300px 100px;}
+        .box5{background-image: url(img1223/1.png); background-size: contain;}
+        .box6{background-image: url(img1223/1.png); background-size: cover;}
+        /* 가장 많이 사용함 - 이미지가 깨지지 않음 */
+        .box7{background-image: url(img_oshine/main.jpg); background-size: cover;}
+        /* 화면에 고정되어있는 바탕 이미지 만들기 */
+        .box8{background-image: url(img_oshine/main.jpg); background-size: cover; background-attachment: fixed;}
+        .box9{background-image: linear-gradient(red,gold);}
+        </style>
+</head>
+<body>
+    <!-- 작은 이미지 -->
+    <div class="box box1">작은이미지 배경</div> <!-- 패턴처럼 사용할 때 -->
+    <div class="box box2">작은이미지 배경: 반복 X</div>
+    <div class="box box3">작은이미지 배경: X축만 반복</div>
+    <div class="box box4">작은이미지 배경: 사이즈를 크게(300px * 100px)</div>
+    <div class="box box5">작은이미지 배경: 프레임에 맞게(이미지는 잘리지 않게)</div>
+    <div class="box box6">작은이미지 배경: 프레임에 맞게(이미지 잘리게 = 화면 가득 채우게)</div>
+    <!-- 큰 이미지 -->
+    <div class="box box7">큰이미지 배경: 프레임에 맞게(이미지 잘리게 = 화면 가득 채우게)</div>
+    <div class="box box8">큰이미지 배경: 부착옵션(스크롤 고정)</div>
+    <div class="box box9">그라데이션</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 10px solid red;
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+        }
+        .item{
+            border: 3px solid black;
+            height: 300px;
+        }
+        @media(max-width:800px){
+            .container{grid-template-columns: repeat(2,1fr);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+    </div>
+</body>
+</html>

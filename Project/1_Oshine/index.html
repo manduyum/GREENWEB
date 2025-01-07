@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        *{padding: 0; margin: 0;}
+        .center{max-width: 1000px; margin: 0 auto; width: 80%;}
+        .ROBOTO{font-family: "Roboto", serif;}
+        .OPEN_SANS{font-family: "Open Sans", serif;}
+        .WORK_SANS{font-family: "Work Sans", serif;}
+        header{padding: 50px 0 100px;}
+        .logo{
+            display: flex; justify-content: space-between; color: #222222;
+        }
+        .section1 .text > div {display: flex; gap: 20px; position: relative;}
+        .section1 .text div .bar{width: 5px; height: 30px; background-color: greenyellow; transition: 1s;}
+        .section1 .text >div:hover .bar{width: 130px;}
+        .section1 .text h6{text-transform: uppercase; font-size: 12px; margin-bottom: 20px; margin-left: 20px; margin-top: 5px; font-weight: 400; position: absolute;}
+        .section1 .text h2{
+            font-size: 35px; font-weight: 400; 
+            width: 85%; line-height: 55px;
+        }
+        .section1 .container{
+            padding: 100px 0;
+            /* border: 10px solid red; */
+            display: grid; gap: 30px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        /* .section1 .container .item{border: 3px solid black;}  */
+        
+        .section1 .container .item img{
+            width: 100%; height: 100%; display: block; object-fit: cover;
+        }
+        .section1 .container .item2, .section1 .container .item6{grid-row: 2 span;}
+
+        footer{
+            color: #888888; background-color: rgb(235, 235, 235);
+            padding: 100px 0;
+        }
+        footer .center{
+            max-width: 350px; margin: 0 auto; align-items: center; justify-content: center;
+        }
+        footer .center .sns{display: flex; gap: 20px; color: rgb(85, 85, 85); padding: 20px 0; width: 150px; margin: 0 auto;}
+        footer .center p{ font-size: 14px;}
+        @media(max-width:1000px){
+            .section1 .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="center">
+        <div class="logo">
+            <div><img src="images/main_logo_black.png" alt=""></div>
+            <div class="ham"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section class="section1 center">
+        <div class="text">
+            <div>
+                <div class="bar"></div>
+                <h6 class="ROBOTO">HELLO EVERYONE</h6>
+            </div>
+            <h2 class="WORK_SANS">Designer & Illustrator based in NYC, crafting beautiful and functional websites and mobile apps</h2>
+        </div>
+        <div class="container">
+            <div class="item item1"><img src="images/img1.jpg" alt=""></div>
+            <div class="item item2"><img src="images/img2.jpg" alt=""></div>
+            <div class="item item3"><img src="images/img3.jpg" alt=""></div>
+            <div class="item item4"><img src="images/img4.jpg" alt=""></div>
+            <div class="item item5"><img src="images/img5.jpg" alt=""></div>
+            <div class="item item6"><img src="images/img6.jpg" alt=""></div>
+            <div class="item item7"><img src="images/img7.jpg" alt=""></div>
+            <div class="item item8"><img src="images/img8.jpg" alt=""></div>
+            <div class="item item9"><img src="images/img9.jpg" alt=""></div>
+            <div class="item item10"><img src="images/img10.jpg" alt=""></div>
+            <div class="item item11"><img src="images/img11.jpg" alt=""></div>
+            <div class="item item12"><img src="images/img12.jpg" alt=""></div>
+            <div class="item item13"><img src="images/img13.jpg" alt=""></div>
+            <div class="item item14"><img src="images/img14.jpg" alt=""></div>
+            <div class="item item15"><img src="images/img15.jpg" alt=""></div>
+            <div class="item item16"><img src="images/img16.jpg" alt=""></div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            <div class="sns">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-behance"></i>
+            </div>
+            <p class="OPEN_SANS">Copyright Brand Exponents 2017. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

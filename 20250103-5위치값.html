@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위치값</title>
+    <style>
+        *{position: relative; padding: 0; margin: 0;}
+        .box{width: 200px; height: 200px; border: 3px solid black; margin: 0 auto;}
+
+        .box1{
+            background-color: antiquewhite;
+            position: relative;
+            top: 50px;
+            left: 100px;
+            z-index: 100; 
+        }
+        .box2{
+            background-color: burlywood;
+            position: relative;
+            top: -100px;
+            left: -50px;
+        }
+        .box3{
+            background-color: violet;
+            position: relative;
+            left: 100px;
+            bottom: 200px;
+        }
+        /* 
+            position : 아이템의 위치를 지정해주는 옵션
+                position : relative (원래 태그 위치)
+                position : absolute (부모 크기 기준)
+                position : fixed (화면 크기 기준)
+        */
+    </style>
+</head>
+<body>
+    <h1>위치값 변경하기</h1>
+    <div class="box box1">박스1</div>
+    <div class="box box2">박스2</div>
+    <div class="box box3">박스3</div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 사용할 폰트연결 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        /* 폰트어썸 사용할시 폰트어썸 ㅇ연결할것 */
+
+
+        *{padding: 0;margin: 0;}
+        li{list-style: none;}
+        body{font-family: "Noto Sans KR", sans-serif;    }
+        h1{font-size: 30px;font-weight: 100;color:#666666}
+        h2{}
+        h3{}
+        h4{font-size: 14px;font-weight: 800;text-transform: uppercase;color:#3E5879;}
+        h5{}
+        h6{font-size: 13px;color:#999999;}
+        p{font-size: 14px;line-height:30px;color:#666666;}
+        .container{
+            /* border:10px solid red; */
+            width:90%;max-width: 1200px;margin:0 auto;
+        }
+        /* 해더 */
+        header{}
+        header .container{
+            height:80px; display: flex;justify-content: space-between;
+            align-items: center;
+        }
+        header .menu{display: flex;gap:20px;
+        text-transform: uppercase;font-size: 14px;
+        color:#666666;font-weight: 500;}
+        
+        /* 메인 이미지 */
+        .main{height:90vh;
+            background-color: #3E5879;
+            text-align: center; display: flex;align-items: center;justify-content: center;}
+        .main h1{color:white;font-weight: 900;font-size: 80px;
+        text-transform: uppercase;}
+        .main p{color:white;}
+
+        /* 섹션1 */
+        .section1{background-color: #F5EFE7;padding: 120px 0;}
+        .section1 h1{margin-bottom: 40px; max-width: 700px;}
+        .section1 .red-text{color:red;}
+        .section1 .sns{display: flex;gap:30px}
+
+        /* 222 */
+        .section2{padding: 120px 0;}
+        .section2 .container{
+            display: grid; grid-template-columns: repeat(3,1fr); gap:30px;
+        }
+        .section2 .item{
+            /* border:1px solid black; */
+        }
+        .section2 .item img{width:100%; display: block;}
+
+        /* 333 */
+        .section3{background-color:#A5BFCC ;padding: 120px 0;}
+        .section3 .container{
+            display: grid; grid-template-columns: repeat(3,1fr);gap:30px;
+        }
+        .section3 .item{background-color: white;padding: 30px;}
+        .section3 img{margin-bottom: 30px;}
+        .section3 h4{}
+
+        /* 5 */
+        .section5{background-color: #3E5879;
+        display: grid;grid-template-columns: repeat(4,1fr);gap:1px;}
+        .section5 .item{
+            background-color: #213555;
+            height:250px;
+            display: flex;align-items: center;justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 해더 -->
+    <header>
+        <div class="container">
+            <div class="logo"><img src="img_oshine/main_logo_white.png"></div>
+            <ul class="menu">
+                <li>about</li>
+                <li>portfolio</li>
+                <li>service</li>
+                <li>experience</li>
+                <li>client</li>
+                <li>contact</li>
+            </ul>
+        </div>
+    </header>
+    
+    <!-- 메인부부 -->
+    <section class="main">
+        <div class="text-box">
+            <h1>Felicity Novak</h1>
+            <p>Designer and Illustrator from Manhattan New York</p>
+        </div>
+    </section>
+
+    <!-- 1 -->
+    <section class="section1">
+        <div class="container">
+            <h6>HELLO EVERYONE </h6>
+            <h1>
+                Hi! I am Felicity, a multi-disciplinary designer based out of the beautiful New York City and I design beautiful and functional websites and mobile applications.
+            </h1>
+            <h1 class="red-text">hello@oshinewptheme.com</h1>
+            <div class="sns">
+                <p>email</p>
+                <p>twitter</p>
+                <p>dribble</p>
+                <p>behance</p>
+                <p>instagram</p>
+                <p>pinterest</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 222 -->
+    <section class="section2">
+        <div class="container">
+            <div class="item"><img src="img1223/1.jpg" alt=""></div>
+            <div class="item"><img src="img1223/2.jpg" alt=""></div>
+            <div class="item"><img src="img1223/3.jpg" alt=""></div>
+            <div class="item"><img src="img1223/4.jpg" alt=""></div>
+            <div class="item"><img src="img1223/5.jpg" alt=""></div>
+            <div class="item"><img src="img1223/6.jpg" alt=""></div>
+            <div class="item"><img src="img1223/7.jpg" alt=""></div>
+            <div class="item"><img src="img1223/8.jpg" alt=""></div>
+            <div class="item"><img src="img1223/9.jpg" alt=""></div>
+            <div class="item"><img src="img1223/10.jpg" alt=""></div>
+            <div class="item"><img src="img1223/11.jpg" alt=""></div>
+            <div class="item"><img src="img1223/12.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="section3">
+        <div class="container">
+            <div class="item">
+                <img src="img1223/icon1.png">
+                <h4>branding</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="item">
+                <img src="img1223/icon2.png">
+                <h4>branding</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="item">
+                <img src="img1223/icon3.png">
+                <h4>branding</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="item">
+                <img src="img1223/icon4.png">
+                <h4>branding</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="item">
+                <img src="img1223/icon5.png">
+                <h4>branding</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+            <div class="item">
+                <img src="img1223/icon6.png">
+                <h4>branding</h4>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 -->
+    <section class="section5">
+        <div class="item"><img src="img1223/client1.png" alt=""></div>
+        <div class="item"><img src="img1223/client2.png" alt=""></div>
+        <div class="item"><img src="img1223/client3.png" alt=""></div>
+        <div class="item"><img src="img1223/client4.png" alt=""></div>
+        <div class="item"><img src="img1223/client5.png" alt=""></div>
+        <div class="item"><img src="img1223/client6.png" alt=""></div>
+        <div class="item"><img src="img1223/client7.png" alt=""></div>
+        <div class="item"><img src="img1223/client8.png" alt=""></div>
+    </section>
+</body>
+</html>

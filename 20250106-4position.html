@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        *{
+            position: relative;
+        }
+        .group{
+            border: 10px solid red; height: 500px;
+        }
+        .box{
+            background-color: gold; border: 3px solid black; width: 100px; height: 100px;
+        }
+        .box:nth-child(2){
+            position: absolute;
+            bottom: 0; right: 0;
+            background-color: lightsalmon;
+        }
+    </style> 
+</head>
+<body>
+    <div class="group">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+</body>
+</html>

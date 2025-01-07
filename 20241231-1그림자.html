@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{width: 300px; height: 300px; background-color: gold; margin: 150px auto;}
+        /* 그림자 > box-shadow : 가로축 세로축 번짐정도 색상*/
+        .box1{box-shadow: 30px 10px 0  blue;}
+        .box2{box-shadow: 30px 10px 0 rgba(0, 0, 255, 0.5);}
+        .box3{box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);}
+        .box4{box-shadow: 0 30px 10px rgba(255, 0, 0, 1);}
+        .box5{
+            /* 그림자 > box-shadow : x축 y축 blur 확장정도 색상 */
+            box-shadow: 0 30px 10px 30px rgba(255, 0, 0, 1);}
+        .box6{
+            /* 기본적으로 연하게 쓰는 방법 */
+            background-color: white;
+            box-shadow: 0 0 50px -30px rgba(0, 0, 0, 0.4);
+        }
+        .box7{box-shadow: 20px 30px 10px blue;}
+        .box8{box-shadow: 20px 30px 10px blue inset;} 
+        /* inset -> 안쪽에 만드는것  */
+        .box9{box-shadow: 10px 10px 10px black, inset 10px 10px 0 red,
+            inset -10px -10px 0 blue;}
+        /* 테두리처럼 보이는 효과가 있음/
+        왜 border 안써? transition 넣을 때 어색한 경우도 있어서~ */
+        .box10{box-shadow: inset 0 0 0 0px red; transition: 1s;}
+        .box10:hover{box-shadow: inset 0 0 0 20px red;}
+    </style>
+</head>
+<body>
+    <h1>그림자</h1>
+    <div class="box box1">그림자</div>
+    <div class="box box2">그림자</div>
+    <div class="box box3">그림자</div>
+    <div class="box box4">그림자</div>
+    <div class="box box5">그림자</div>
+    <div class="box box6">그림자</div>
+    <div class="box box7">그림자</div>
+    <div class="box box8">그림자</div>
+    <div class="box box9">그림자</div>
+    <div class="box box10">그림자</div>
+</body>
+</html>

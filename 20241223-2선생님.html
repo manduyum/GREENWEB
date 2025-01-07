@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        *{padding: 0; margin: 0; font-family: "Open Sans", serif;}
+        .container{
+            border: 1px solid black;
+            max-width: 1200px; width: 90%; margin: 0 auto;
+        }
+        .section1{background-color: rgba(250, 235, 210, 0.5); padding: 120px 0;}
+        .section1 .container h1{color: #383838; margin-bottom: 40px; max-width: 700px;}
+        .section1 .container .red-text{color: red; }
+        .section1 .container .sns{display: flex; gap: 30px;}
+
+        /* section2 */
+        .section2 .container {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+        }
+        .section2 .container .item{border: 5px solid black; } 
+        .section2 .container .item img{
+            width: 100%;/* 아이템 너비 만큼 */ 
+            display: block; /* 이미지가 inline 속성이라 space bar 공백이 생겨서  */
+            /* aspect-ratio: 1; > 이렇게 해야 마지막 이미지가 1:1비율이 된다. */
+        } 
+
+        /* section3 */
+        .section3{background-color: rgba(250, 235, 210, 0.5); padding: 100px;}
+        .section3 .container h6{color: #777777; margin-bottom: 20px; }
+        .section3 .container h1{color: #383838; margin-bottom: 20px; font-size: 34px; font-weight: 400; width: 700px;}
+
+        .section3 .container .services{
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;
+        }
+        .section3 .container .services > div{
+            /* border: 5px solid blue; */
+            background-color: white;
+            padding: 50px;
+        }
+
+        .section3 .container .services div img{
+            margin-bottom: 20px;
+            width: 100px; aspect-ratio: 1;
+        }
+        .section3 .container .services div h4{
+            color: #203132; text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .section3 .container .services div p{
+            color: #7e7e7e;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="container">
+            <h6>HELLO EVERYONE</h6>
+            <h1>Hi! I am Felicity, a multi-disciplinary designer based out of the beautiful New York City and I design beautiful and functional websites and mobile applications.</h1>
+            <h1 class="red-text">hello@oshinewptheme.com</h1>
+            <div class="sns">
+                <p>EMAIL</p>
+                <p>TWITTER</p>
+                <p>DRIBBBLE</p>
+                <p>BEHANCE</p>
+                <p>INSTAGRAM</p>
+                <p>PINTEREST</p>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="item"><img src="img_oshine/img1.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img2.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img3.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img4.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img5.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img6.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img7.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img8.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img9.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img10.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img11.jpg" alt=""></div>
+            <div class="item"><img src="img_oshine/img12.jpg" alt=""></div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <h6>SERVICES</h6>
+            <h1>I can do everything to help you get your business online & mobile. </h1>
+            <div class="services">
+                <div>
+                    <img src="img_oshine/1x/Asset 5.png" alt="">
+                    <h4>Branding</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div>
+                    <img src="img_oshine/1x/Asset 6.png" alt="">
+                    <h4>Marketing</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div>
+                    <img src="img_oshine/1x/Asset 7.png" alt="">
+                    <h4>Development</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div>
+                    <img src="img_oshine/1x/Asset 8.png" alt="">
+                    <h4>Branding</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div>
+                    <img src="img_oshine/1x/Asset 9.png" alt="">
+                    <h4>Marketing</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+                <div>
+                    <img src="img_oshine/1x/Asset 10.png" alt="">
+                    <h4>Development</h4>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

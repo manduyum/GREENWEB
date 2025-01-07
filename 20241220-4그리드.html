@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드</title>
+    <style>
+        .container{border: 10px solid red;
+        display: grid; grid-template-columns: repeat(5, 1fr);
+        gap : 30px;
+        /* ! grid-template-columns : 칸의 너비를 지정하는 옵션으로 무조건 필수임 
+        ex)grid-template-columns: 100px 200px 200px 300px;
+        ex)grid-template-columns: repeat(4, 1fr)
+            같은 크기로 만들 때 -> repeat를 사용한다
+            repeat(칸수, 배율)
+            ex) repeat(4, 1fr) 4번 반복해줘 1비율을 => 총 4칸이 한줄에 오게된다  
+            ex) repeat(4, 1fr 2fr) 4번 반복해줘 1비율과 2비율을 => 총 8칸이 한줄에 오게된다*/}
+        .item{border: 3px solid blue; padding: 20px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+        <div class="item">아이템</div>
+    </div>
+</body>
+</html>

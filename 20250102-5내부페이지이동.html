@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부페이지로 이동</title>
+    <style>
+        section{
+            border: 10px solid red;
+            margin: 100px;
+            height: 1200px;
+            font-size: 100px;
+        }
+        .section1{background-color: lightblue;}
+        .section2{background-color: limegreen;}
+        .section3{background-color: lightpink;}
+        .section4{background-color: lightsalmon}
+        html{scroll-behavior: smooth;}
+    </style>
+</head>
+<body>
+    <a href="#">맨 위로 이동</a>
+    <a href="#b">어바웃 위치로 이동</a>
+    <a href="#c">서비스 위치로 이동</a>
+    <a href="#d">컨택트 위치로 이동</a>
+
+    <section class="section1" id="a">메인화면</section>
+    <section class="section2" id="b">어바웃</section>
+    <section class="section3" id="c">서비스 섹션</section>
+    <section class="section4" id="d">컨택트 섹션</section>
+</body>
+</html>

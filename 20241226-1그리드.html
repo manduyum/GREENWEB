@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .container{
+            border: 10px solid red;
+            display : grid;
+            /* 필수-칸작성*/
+            grid-template-columns: repeat(3,1fr);
+            /* 간격 */
+            gap: 30px;
+            /* 줄높이(필요한 경우에만)*/
+            grid-auto-rows: 200px;
+        }
+        .item{border: 4px solid black;}
+        .item1{background-color: pink;}
+        .item2{background-color: orange; grid-column: 2 span;}
+        .item3{background-color: gold;}
+        .item4{background-color: green; grid-row: 2 span; grid-column: 2 span;}
+        .item5{background-color: blue;}
+        .item6{background-color: magenta;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">아이템1</div>
+        <div class="item item2">아이템2</div>
+        <div class="item item3">아이템3</div>
+        <div class="item item4">아이템4</div>
+        <div class="item item5">아이템5</div>
+        <div class="item item6">아이템6</div>
+    </div>
+</body>
+</html>

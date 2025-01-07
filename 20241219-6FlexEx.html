@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        * {padding: 0; margin: 0;}
+        body{background-color: lightblue; font-family: "Open Sans", serif;}
+        .container{/* border: 5px solid red; */ display: flex; max-width: 1200px; gap: 40px; margin: 100px auto 0; width: 90%; /* width 98% 하면 작은 화면이 될 때 옆에 여백이 생김 */ /* flex-wrap: wrap; */}
+        .container .item{/* border: 1px solid blue; */ background-color: #efeee8; text-align: center; padding: 100px 0px 30px; width: 33.33%; 
+            /* width를 직접 지정 말고 %로하기 */}
+        .container .item h3{margin-bottom: 40px; font-size: 42px; color: #50586b;}
+        .container .item .price{font-size: 62px; line-height: 100px; color: #50586b;
+        margin: 30px auto;}
+        .container .item .explain{ margin-bottom: 40px; line-height: 35px; color: #50586b; font-size: 16px;}
+        .container .item .btn{line-height: 60px; background-color: tomato; width: 200px;
+        margin: 0 auto; color: white; font-size: 18px; font-weight: 700;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h3>PERSONAL</h3>
+            <img src="https://placehold.co/200" alt="">
+            <p class="price">$29</p>
+            <p class="explain">1 WordPress Install<br>
+                100K Monthly Visitors<br>
+                10GB Storage<br>
+                2GB RAM<br>
+                Includes 24/7 Support.</p>
+            <p class="btn">GET STARTED!</p>
+        </div>
+        <div class="item">
+            <h3>PERSONAL</h3>
+            <img src="https://placehold.co/200" alt="">
+            <p class="price">$29</p>
+            <p class="explain">1 WordPress Install<br>
+                100K Monthly Visitors<br>
+                10GB Storage<br>
+                2GB RAM<br>
+                Includes 24/7 Support</p>
+            <p class="btn">GET STARTED!</p>
+        </div>
+        <div class="item">
+            <h3>PERSONAL</h3>
+            <img src="https://placehold.co/200" alt="">
+            <p class="price">$29</p>
+            <p class="explain">1 WordPress Install<br>
+                100K Monthly Visitors<br>
+                10GB Storage<br>
+                2GB RAM<br>
+                Includes 24/7 Support</p>
+            <p class="btn">GET STARTED!</p>
+        </div>
+    </div>
+</body>
+</html>

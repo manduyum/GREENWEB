@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{display: grid; grid-template-columns: repeat(2,1fr);}
+        .box{width: 200px; height: 200px; background-color: tomato; margin: 50px;}
+        .squar{width: 200px; height: 100px; background-color: steelblue; margin: 100px;} 
+        .box1{border-radius: 10px;}
+        .box2{border-radius: 50%;}
+        .box3{border-radius: 100px 100px 0 0;}
+        .box4{border-radius: 100px 0 100px 0;}
+        .box5{border-radius: 100% 0 0 0;}
+
+        .squar1{border-radius: 50%;}
+        .squar2{border-radius: 50px;}
+        .squar3{border-radius: 100px 100px 0 0;}
+        .squar4{border-radius: 0 30px;}
+    </style>
+</head>
+<body>
+    <h1>보더 라디어스 : 모퉁이 동그랗게</h1>
+    <div class="grid">
+        <div class="box box1">정사각형1</div>
+        <div class="box box2">정사각형2</div>
+        <div class="box box3">정사각형3</div>
+        <div class="box box4">정사각형4</div>
+        <div class="box box5">정사각형5</div>
+    </div>
+    <div class="grid">
+        <div class="squar squar1">직사각형1</div>
+        <div class="squar squar2">직사각형2</div>
+        <div class="squar squar3">직사각형3</div>
+        <div class="squar squar4">직사각형4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-color: antiquewhite;}
+        .text{
+            width: 500px; padding: 30px; margin: 100px auto;
+            color: #666666; line-height: 25px;
+            background-color: white;
+            /* 그림자 : x축거리 y축거리 번짐정도 색상 */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .text span{
+            background-image: linear-gradient(transparent 65%, pink 65%);
+        }
+        h6 .bar{width: 10px; height: 3px; background-color: red;
+        }
+        h6{display: flex; align-items: flex-end;}
+    </style>
+</head>
+<body>
+    <h6>
+        <div class="bar">service</div>
+    </h6>
+    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam asperiores <span> distinctio totam quibusdam quis sunt, adipisci rem. Iste cumque vitae voluptatem consequuntur in illum molestias, modi eum perferendis quis. </span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque libero eum laborum nesciunt expedita beatae optio et magni! Ab ea fuga magnam illum, corporis iure. Vitae quasi vero voluptatem dicta!</div>
+</body>
+</html>

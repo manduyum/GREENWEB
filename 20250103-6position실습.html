@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position실습</title>
+    <style>
+        *{position: relative; padding: 0; margin: 0;}
+        .container{
+            display: flex; gap: 20px; margin: 0 auto; height: 500px;
+            align-items: center; justify-content: center; /* 가운데 정렬하는 방법 까먹지 말기 */
+            border: 10px solid red;
+        }
+        .container .box{
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+        
+        /* nth-chlid 선택자  */
+        .container .box2{
+            /* .box2 == .box:nth-child(2) */
+            background-color: white;
+        }
+
+        .box:nth-child(2n-1){top:50px} 
+        /* == .container .box1, .box3, .box5{top : 50px;} */
+
+        .box:nth-child(2n){background-color:pink;}
+
+
+        /*  
+            top값을 주면 현재 위치 기준으로 아래로 내려감. 
+            bottom값을 주면 현재 위치 기준으로 위로 올라감.
+            left값을 주면 현재 위치 기준으로 오른쪽으로 감
+            right값을 주면 현재 위치 기준으로 왼쪽으로 감
+        */
+    </style>
+</head>
+<body>
+    <h1>위치값</h1>
+    <div class="container">
+        <div class="box box1">박스1</div>
+        <div class="box box2">박스2</div>
+        <div class="box box3">박스3</div>
+        <div class="box box4">박스4</div>
+        <div class="box box5">박스5</div>
+        <div class="box box6">박스6</div>
+    </div>
+</body>
+</html>

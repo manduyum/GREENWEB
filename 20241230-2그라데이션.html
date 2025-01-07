@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{height: 700px; margin: 100px; border: 10px solid black;}
+        .box1{background-image: linear-gradient(red, gold);}
+        .box2{background-image: linear-gradient(red, gold); background-size: 100px 100px;}
+        /* background-size는 가로 세로 두개 입력해야함. */
+        .box3{background-image: linear-gradient(red 50%, gold 50%);}
+        .box4{background-image: linear-gradient(red 50%, gold 50%); background-size: 100px 100px;}
+        .box5{background-image: linear-gradient(white 19px, gray 19px); background-size: 20px 20px;}
+        .box6{background-image: linear-gradient(gold 25%, red 25%, red 50%, gold 50%, gold 75%, red 75%);
+        background-size: 50px 50px;}
+        .box7{ background-color: pink; 
+            background-image: linear-gradient(45deg, #a5bfcc 25%, transparent 25%, transparent 50%, #a5bfcc 50%, #a5bfcc 75%, transparent 75% );
+            background-size: 50px 50px;}
+        .box8{background-image: radial-gradient(circle at 200px 0, red, transparent 100px), radial-gradient(circle at 500px 0, blue, transparent 300px);}
+        /* .box8{background-image: radial-gradient(circle at 200px 0, red, transparent 100px);} */
+    </style> 
+</head>
+<body>
+    <div class="box box1">그라데이션</div>
+    <div class="box box2">그라데이션 사이즈 줄이기</div>
+    <div class="box box3">그라데이션 색상변경</div>
+    <div class="box box4">그라데이션 색상변경+사이즈</div>
+    <div class="box box5">그라데이션 색상변경+사이즈</div>
+    <div class="box box6">그라데이션 색상변경+사이즈</div>
+    <div class="box box7">그라데이션 색상변경+사이즈</div>
+    <div class="box box8">그라데이션 색상변경+사이즈</div>
+</body>
+</html>

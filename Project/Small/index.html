@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about page</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+        @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+        *{padding: 0; margin: 0; font-family: "Gotu", serif; position: relative;}
+        li{list-style: none;}
+        a{color: inherit; text-decoration: none; display: inline-block;}
+        img{display: block; width: 100%;}
+
+        .container{
+            max-width: 1200px; width: 80%; margin: 0 auto;
+        }
+
+        header{
+            /* background-image: url(image/header.jpg);/ */
+            background-image: url(image/header.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 10px solid red;
+            height: 500px;
+        }
+        header .page-title {
+            width: 100%; height: 100px; display: flex; gap: 100px;
+            margin: 10px;
+        }
+        header .page-title .logo img{
+            position: absolute; top: 0; left: 0; z-index: 100; 
+            width: 100%; height: 100%; object-fit: cover;
+        }
+        header .page-title ol{
+            display: flex; gap: 20px;
+        }
+        header .page-title ol li{
+            color: white; text-transform: uppercase;
+        }
+        header h1{
+            color: white; position: absolute; 
+            text-transform: uppercase; 
+        }
+
+        .about2 .container{
+            display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="page-title">
+            <div class="logo">
+                <img src="image/logo-light-img (1).png" alt="logo_light">
+            </div>
+            <ol>
+                <li>home</li>
+                <li>about us</li>
+                <li>shop</li>
+                <li>contact</li>
+            </ol>
+        </div>
+        <h1>about</h1>
+    </header>
+
+    <section class="about1">
+        <h2>Our brand</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indidunt labore et dolore magna aliqua. Ut enim ad minim veni, quis nostrud exercin tation ullamcon laboris nisi ut aliquip ex ea commo do consequat. Duis auteirur urenu dolor in reprehen deritin vo luptatevi elit esse cillumin reprehen deri tinv iolupta te veste lit esse cillum irure.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe citation ullamco laboris nisi uta.</p>
+        <div class="btn">read more</div>
+    </section>
+
+    <section class="about2">
+        <div class="container">
+            <div class="item">
+                <img src="image/collection1.jpg" alt="리빙가구">
+                <h3>Explore Living</h3>
+            </div>
+            <div class="item">
+                <img src="image/collection2.jpg" alt="오피스가구">
+                <h3>Explore office</h3>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

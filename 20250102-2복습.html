@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .left{
+            border: 10px solid black;
+            display: grid; grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .box{border: 3px solid green;}
+        .box1{}
+        .box2{}
+        .box3{grid-column: 2 span; height: 200px;}
+        .box4{grid-column: 2 span;}
+        @media(max-width:700px){
+            .left{grid-template-columns: repeat(1, 1fr);}
+            .box{grid-column: auto;}
+            /* 
+            원래 2,1fr이여서 2칸을 1칸으로 썼는데 길이가 줄어들면서 1, 1fr 을 하게되면 2칸을 못쓰게되서 모양이 이상하게 됨.
+            이 때 사용하는게 grid-column : auto; >>원래대로 돌려서 이상하지 않게 만들어줌. 
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+    </div>
+</body>
+</html>

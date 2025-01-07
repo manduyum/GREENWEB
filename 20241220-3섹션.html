@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시맨틱 태그</title>
+    <style>
+        .section1{border: 10px solid gold; background-color: tomato;
+        padding: 100px 0; }
+        .section1 .container{border:10px solid red; max-width: 1200px; width: 90%; margin: 0 auto; display: flex; gap: 30px;}
+        .section1 .item{border: 3px solid blue; width: 25%; padding: 40px; background-color: cornflowerblue;}
+
+        .section2{padding-top: 100px; padding-bottom: 100px; background-color: skyblue;}
+        .section2 .container{width: 90%; max-width: 1200px; margin: 0 auto; display: flex; gap: 30px;}  
+        .section2 .item{
+            background-color: white; width: 33.33%; padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1번째 섹션 -->
+    <section class="section1">
+        <div class="container">
+            <div class="item">아이템</div>
+            <div class="item">아이템</div>
+            <div class="item">아이템</div>
+            <div class="item">아이템</div>
+        </div>
+    </section>
+    <!-- 2번째 섹션 -->
+    <section class="section2">
+        <div class="container">
+            <div class="item">item</div>
+            <div class="item">item</div>
+            <div class="item">item</div>
+        </div>
+    </section>
+</body>
+</html>

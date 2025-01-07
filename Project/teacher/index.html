@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css");
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+        *{padding: 0; margin: 0;}
+        body{font-family: 'SUIT Variable', sans-serif;}
+        img{display: block;}
+
+        h2{font-size: 30px; font-weight: 100; line-height: auto;}
+        h6{font-size: 14px; font-weight: 100; line-height: auto;}
+        p{font-size: 14px; font-weight: 400; line-height: 22px;}
+
+        header{
+            width: 80%; max-width: 1200px; margin: 0 auto;
+            height: 120px;
+            border: 10px solid red;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+
+        .section1{padding-bottom: 120px;}
+        .section1 .title{
+            width: 80%; max-width: 1200px; margin: 0 auto 50px;
+        }
+        .section1 .container{
+            width: 80%; max-width: 1200px; margin: 0 auto;
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr);gap: 30px;
+        }
+        .section1 .item{}
+        .section1 .item-m{grid-row: 2 span;}
+        .section1 img{width: 100%; height: 100%; object-fit: cover;}
+
+        footer{
+            background-color: #dddddd; padding: 150px 0; text-align: center;
+        }
+        footer i{margin: 8px;}
+    </style>
+</head>
+<body>
+    <header class="center">
+        <div class="logo">
+            <div><img src="../1_Oshine/images/main_logo_black.png" alt=""></div>
+            <div class="ham"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="title">
+            <h6>HELLO EVERYONE</h6>
+            <h2>Designer & Illustrator based in NYC, crafting beautiful and functional websites and mobile apps</h2>
+        </div>
+        <div class="container">
+            <div class="item"><img src="../1_Oshine/images/img1.jpg" alt=""></div>
+            <div class="item item-m"><img src="../1_Oshine/images/img2.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img3.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img4.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img5.jpg" alt=""></div>
+            <div class="item item-m"><img src="../1_Oshine/images/img6.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img7.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img8.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img9.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img10.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img11.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img12.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img13.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img14.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img15.jpg" alt=""></div>
+            <div class="item"><img src="../1_Oshine/images/img16.jpg" alt=""></div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            <div class="sns">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-behance"></i>
+            </div>
+            <p class="OPEN_SANS">Copyright Brand Exponents 2017. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

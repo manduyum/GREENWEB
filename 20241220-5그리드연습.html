@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그리드 연습</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+        *{padding: 0; margin: 0;}
+        .section1{background-color: steelblue; padding: 120px 0; }
+        .section1 .container{
+            /* border: 10px solid red; */
+            width: 90%; max-width: 1200px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .section1 .container .item{
+            /* border: 3px solid blue; */
+            color: white;
+            padding: 20px;
+            display: flex; gap: 20px;
+        }
+        .section1 .container .item .fa-heart{
+            color: white;
+            width: 160px; /* width가 왜 씹히는지 모르겠음 */
+            height: 40px; text-align: center;
+            box-sizing: border-box; line-height: 40px;
+            /* flex는 당겨져! 그러니깐 꼭 크기를 지정해줘야해*/
+            border: 1px solid white;
+            border-radius: 100%;
+        }
+        .section1 .container .item h4{
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .section1 .container .item p{
+            line-height: 30px;
+            font-size: 14px;
+        }
+
+        .section2{background-color: steelblue; padding-bottom: 100px;}
+        .section2 .container{
+            /* border: 10px solid red; */
+            width: 90%; max-width: 1200px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        .section2 .container .item{
+            /* border: 3px solid blue; */
+            color: white;
+            padding: 20px;
+        }
+
+        .section2 .container .item h4{
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        .section2 .container .item p{
+            line-height: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        <div class="container">
+            <div class="item">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <h4>we love hosting</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <h4>we love hosting</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <h4>we love hosting</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+                </div>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <h4>we love hosting</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section2">
+        <div class="container">
+            <div class="item">
+                <h4>we love hosting</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+            </div>
+            <div class="item">
+                <h4>we love hosting</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+            </div>
+            <div class="item">
+                <h4>we love hosting</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+            </div>
+            <div class="item">
+                <h4>we love hosting</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis error in praesentium quibusdam, qui et iusto quae ipsum quia sit odio voluptas voluptatibus voluptate possimus! Debitis dolor explicabo pariatur nostrum!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

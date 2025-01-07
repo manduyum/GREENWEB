@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 10px solid red;
+            max-width: 1200px; width: 80%; margin: 0 auto;
+            display: grid; grid-template-columns: repeat(3,1fr); gap: 30px;
+        }
+        .container .item{
+            border: 3px solid black;
+        }
+        .container .item img{
+            width: 100%; display: block;
+        }
+        @media(max-width:1000px){
+            .container{grid-template-columns: repeat(2,1fr);}
+        }
+        @media(max-width:600px){
+            .container{grid-template-columns: repeat(1,1fr);}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"><img src="img_oshine/img1.jpg" alt=""></div>
+        <div class="item"><img src="img_oshine/img2.jpg" alt=""></div>
+        <div class="item"><img src="img_oshine/img3.jpg" alt=""></div>
+        <div class="item"><img src="img_oshine/img4.jpg" alt=""></div>
+        <div class="item"><img src="img_oshine/img5.jpg" alt=""></div>
+        <div class="item"><img src="img_oshine/img6.jpg" alt=""></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pinterest login page</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+        *{padding: 0; margin: 0; margin-bottom: 10px; font-family: 'roboto';}
+        body{background-color: #888888;}
+        .popup{max-width: 400px; margin: 100px auto; border: 1px solid white; background-color: white; padding: 40px 0; border-radius: 30px;}
+        .popup .row{ width: 70%; margin: 0 auto;}
+        .popup .row1 > div{text-align: center;}
+        .popup .row1 i{color: red; font-size: 50px;}
+        .popup .row1 h3{font-size: 30px; margin-bottom: 30px;  text-align: center;}
+
+        .popup .row label{display: block; margin-bottom: -10px;}
+        .popup .row input{border-radius: 10px; border: 2px solid gray; line-height: 40px;
+        padding-left: 10px; width: 100%;}
+        
+        .popup .row5 button{text-align: center; border-radius: 20px; width: 100%; color: white; line-height: 40px; font-size: 16px; font-weight: bold; }
+        .popup .row5 .btn1{background-color: red;}
+        .popup .row5, .row6, .row7{text-align: center; font-size: 10px; padding-bottom: 10px;}
+        .popup .row5 .btn2{background-color: blue;}
+        .popup .row5 .btn3{background-color: white; color: black; font-weight: 400;}
+        .popup .row5 p{font-size: 16px;}
+        .popup .row5 .btn2, .btn3{display: flex; padding: 0 20px; align-items: center;
+            justify-content: space-between;} 
+        .popup .row5 button div{margin: 0;}
+        .popup .row6 span{font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="row row1">
+            <div><i class="fa-brands fa-pinterest"></i></div>
+            <h3>Pinterest에 오신 것을 환영합니다</h3>
+        </div>
+        <div class="row row2">
+            <label for="email">이메일</label><br>
+            <input type="text" placeholder="이메일" id="email">
+        </div>
+        <div class="row row3">
+            <label for="password">비밀번호</label><br>
+            <input type="password" placeholder="비밀번호" id="password">
+        </div>
+        <div class="row row4">
+            <p>비밀번호를 잊으셨나요?</p>
+        </div>
+        <div class="row row5">
+            <button class="btn1">로그인</button>
+            <p>또는</p>
+            <button class="btn2">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div>Facebook으로 계속하기</div>
+            </button>
+            <button class="btn3">
+                <div><i class="fa-brands fa-google"></i></div>
+                <div>Google 계정으로 계속하기</div>
+            </button>
+        </div>
+        <div class="row row6">
+            계속 진행하면 Pinterest <span>서비스 약관</span>에 동의하고 <span>개인정보처리방침</span>을 읽었음을 인정하는 것으로 간주됩니다. <br>
+            컬렉션 알림.
+        </div>
+        <div class="row row7">
+            <p>아직 Pinterest를 사용하고 있지 않으신가요? 가입하기</p>
+            <p>사업체인가요? 여기에서 시작하세요!</p>
+        </div>
+    </div>
+</body>
+</html>

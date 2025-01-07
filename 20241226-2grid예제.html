@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gird example</title>
+    <style>
+        .container{
+            border: 10px solid red;
+            display: grid;
+            /* gap: 30px; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 200px;
+        }
+        .item{border: 3px solid black;}
+        .item1{background-color: lightblue; grid-row: 2 span;}
+        .item2{background-color: lightcoral;}
+        .item3{background-color: lightseagreen; grid-row: 2 span;}
+        .item4{background-color: lightgreen; grid-row: 2 span;}
+        .item5{background-color: lightskyblue; }
+        .item6{background-color: lightsalmon;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">아이템1</div>
+        <div class="item item2">아이템2</div>
+        <div class="item item3">아이템3</div>
+        <div class="item item4">아이템4</div>
+        <div class="item item5">아이템5</div>
+        <div class="item item6">아이템6</div>
+    </div>
+</body>
+</html>

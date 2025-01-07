@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+        *{padding: 0; margin: 0;}
+        section{background-color: red; color: white;}
+        section .middle{max-width: 1200px; width: 80%; margin: 0 auto; padding: 50px 0;}
+        section .middle .title .top{display: flex; gap: 10px; padding-bottom: 30px;}
+        section .middle .title .top .bar{width: 20px; background-color: white; height: 2px;
+            margin-top: 20px; 
+        }
+        section .middle .title h3{padding-bottom: 30px; font-size: 30px;}
+        
+        section .middle .container{display: grid; gap: 50px; grid-template-columns: repeat(2, 1fr);} /* flex가 아니라 grid 사용해야함 */
+        section .middle .container .left{
+            display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr);
+        }
+        section .middle .container .left .box{background-color: tomato; padding: 10px;}
+        section .middle .container .left .box3{grid-column: 2 span; height: 200px;}
+        section .middle .container .left .box4{grid-column: 2 span; background-color: white; color: red; text-align: center;}
+
+
+        section .middle .container .right{display: grid; grid-template-columns: repeat(1, 1fr);}
+        section .middle .container .right .row{display: flex; gap: 20px;}
+        section .middle .container .right .row .icon{
+            border-radius: 50%; background-color: white; color: red;
+            width: 40px; height: 40px; text-align: center; justify-content: center;
+        }
+        section .middle .container .right .site{
+            font-size: 13px;
+            display: flex; gap: 20px; flex-wrap: wrap;
+        } 
+    </style>
+</head>
+<body>
+    <section class="section6">
+        <div class="middle">
+            <div class="title">
+                <div class="top">
+                    <div class="bar"></div>
+                    <p>GET IN TOUCH</p>
+                </div>
+                <h3>I love to listen and I am eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and I will get back to you as soon as possible.</h3>
+            </div>
+            
+            <div class="container">
+                <div class="left">
+                    <div class="box box1">Name</div>
+                    <div class="box box2">Email</div>
+                    <div class="box box3">Message</div>
+                    <div class="box box4">SUBMIT</div>
+                </div>
+                <div class="right">
+                    <div class="row">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h6>Call Me</h6>
+                            <p>+001-987-654-3210</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6>Mail Me</h6>
+                            <p>help@brandexponents.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6>Visit Me</h6>
+                            <p>45 Park Ave, Newyork, NY 10003</p>
+                        </div>
+                    </div>
+                    <div class="site">
+                        <p>EMAIL</p>
+                        <p>TWITTER</p>
+                        <p>DRIBBBLE</p>
+                        <p>BEHANCE</p>
+                        <p>INSTAGRAM</p>
+                        <p>PINTEREST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

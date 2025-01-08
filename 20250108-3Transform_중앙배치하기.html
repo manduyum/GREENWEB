@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중앙배치하기</title>
+    <style>
+        *{
+            position: relative; padding: 0; margin: 0;
+        }
+        .box{
+            width: 80%; max-width: 1000px; height: 500px;
+            background-color: burlywood;
+        }
+        .box h2{
+            border: 2px solid black; background-color: gold;
+            position: absolute; padding: 30px;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50px);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>글자 박스를 중앙에 배치하기</h2>
+    </div>
+</body>
+</html>

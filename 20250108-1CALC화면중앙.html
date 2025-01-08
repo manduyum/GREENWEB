@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면 중앙&calc</title>
+    <style>
+        *{padding: 0; margin: 0; position: relative;}
+        .pop{
+            background-color: gold;
+            width: 400px; height: 500px;
+            position: fixed; 
+            /* left: 50%; margin-left: -200px; */
+            left: calc(50% - 200px); /* 연산자 앞 뒤는 띄어쓰기 필수 */
+            top: calc(50% - 250px);
+        }
+    </style>
+</head>
+<body>
+    <div class="pop">
+        화면 중앙에 배치되도록
+    </div>
+</body>
+</html>

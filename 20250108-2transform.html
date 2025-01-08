@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform_translate&rotate&scale&skew</title>
+    <style>
+        /* body{position: relative;} */
+        h1{
+            text-align: center;
+        } 
+        .container_position{
+            position: absolute;
+            gap: 65px;
+        }
+        .container_position >div{
+            background-color: lightblue;
+        }
+        .container{
+            display: flex; align-items: center; justify-content: space-between;
+            background-color: antiquewhite;
+            padding: 100px;
+        }
+        .box{
+            border: 3px solid black; background-color: gold;
+            width: 100px; height: 100px;
+        }
+        .box1{
+            /* transform: translateX(40px); transform: translateY(40px); */
+            transform: translate(50%, 200px);
+        }
+        .box2{
+            transform: rotate(45deg);
+        }
+        .box3{
+            transform: scale(0.5);
+        }
+        .box4{
+            transform: skewX(20deg) translate(-100px, 50px);
+        }
+    </style>
+</head> 
+<body>
+    <h1>변형하기</h1>
+    <div class="container container_position">
+        <div class="box">이동 MOVE</div>
+        <div class="box">회전 ROTATE</div>
+        <div class="box">크기 SCALE</div>
+        <div class="box">기울기 SKEW</div>
+    </div>
+    <div class="container">
+        <div class="box box1">이동 MOVE</div>
+        <div class="box box2">회전 ROTATE</div>
+        <div class="box box3">크기 SCALE</div>
+        <div class="box box4">기울기 SKEW</div>
+    </div>
+</body>
+</html>

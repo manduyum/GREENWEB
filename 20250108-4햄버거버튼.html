@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>햄버거 버튼</title>
+    <style>
+        *{position: relative;}
+        .ham{
+            background-color: aqua; width: 200px; height: 200px;
+        }
+        .ham .bar{
+            display: block;
+            width: 120px; height: 10px; background-color: black;
+            position: absolute; top: calc(50% - 5px); left: calc(50% - 60px);; 
+            transition: 0.5s;
+        }
+        .ham .bar1{
+            transform: translate(0, -30px);
+        }
+        .ham .bar3{
+            transform: translate(0, 30px);
+        }
+        /* 
+            .ham:hover .bar1{transform: rotate(45deg);}
+            .ham:hover .bar2{display: none;}
+            .ham:hover .bar3{ transform: rotate(-45deg);} 
+        */
+        .ham:hover .bar1{
+            transform: translate(0,0) rotate(45deg);
+        }
+        .ham:hover .bar2{
+            transform: scaleX(0);
+        }
+        .ham:hover .bar3{
+            transform: translate(0,0) rotate(-45deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ham">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
+    </div>
+</body>
+</html>

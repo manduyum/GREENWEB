@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,70 +8,156 @@
     <style>
         @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
         @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
-        *{padding: 0; margin: 0; font-family: "Gotu", serif; position: relative;}
-        li{list-style: none;}
-        a{color: inherit; text-decoration: none; display: inline-block;}
-        img{display: block; width: 100%;}
 
-        .container{
-            max-width: 1200px; width: 80%; margin: 0 auto;
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "Gotu", serif;
+            position: relative;
         }
 
-        header{
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
             /* background-image: url(image/header.jpg);/ */
             background-image: url(image/header.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         header .page-title {
             /* border: 10px solid red; */
             height: 400px
         }
-        header .page-title img{
-            width: 100%; height: 100%; object-fit: cover;
+
+        header .page-title img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-        header h1{
+
+        header h1 {
             /* border: 5px solid gold; */
-            color: white; text-transform: uppercase; 
-            position: absolute; top:0; left: 0; 
-            width: 100%; height: 100%;
-            display: flex; align-items: center; justify-content: center;
+            color: white;
+            text-transform: uppercase;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: rgba(0, 0, 0, 0.4);
         }
 
-        .about1{
+        .about1 {
             text-align: center;
             padding: 120px 0;
         }
-        .about1 p{
-            border: 1px solid black;
-            max-width: 800px; width: 80%; margin: 0 auto 10px;
+
+        .about1 p {
+            /* border: 1px solid black; */
+            max-width: 800px;
+            margin: 0 auto 10px;
+        }
+        .about1 .btn {
+            text-decoration-line: underline;
         }
 
-        .about2{padding-bottom: 120px;}
-        .about2 .container{
-            display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;
+        .about2 {
+            padding-bottom: 120px;
         }
-        .about2 .item{
+
+        .about2 .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .about2 .item {
             border: 1px solid green;
-        } 
-        .about2 .item h3{
-            width: 300px; height: 60px;
+        }
+
+        .about2 .item h3 {
+            width: 300px;
+            height: 60px;
             /* 글자 가운데로 정렬하는 방법 */
-            display: flex; align-items: center; justify-content: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: gold;
-            position: absolute; top: 50%; left: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
             margin-left: -150px;
             margin-top: -30px;
         }
-        @media(max-width:1000px){
-            .about2 .container{grid-template-columns: repeat(1, 1fr);}
-            .about2 .item h3{
-                width: 200px; margin-left: -100px;
+
+        @media(max-width:1000px) {
+            .about2 .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .about2 .item h3 {
+                width: 200px;
+                margin-left: -100px;
             }
         }
+
+        /* .about3{
+            margin-bottom: 700px;
+        } */
+        .about3 .text-box img{
+            width: auto; margin: 0 auto 50px;
+        }
+        .about3 .text-box p{
+            max-width: 600px; margin: 0 auto 30px;
+            text-align: center;
+        }
+        .about3 .text-box h4{
+            max-width: 600px; margin: 0 auto;
+            text-align: center;
+        }
+
+        .about3 .btn-left{
+            width: 20px; height: 20px;
+            border-top: 3px solid gray;
+            border-left: 3px solid gray;
+            transform: rotate(-45deg) translate(0, -50%);
+            position: absolute; top: 50%; left: 0;
+        }
+
+        .about3 .btn-right{
+            width: 20px; height: 20px;
+            border-bottom: 3px solid gray;
+            border-right: 3px solid gray;
+            transform: rotate(-45deg) translate(0, -50%);
+            position: absolute; top: 50%; right: 0;
+        }
+
     </style>
 </head>
+
 <body>
     <header>
         <div class="page-title">
@@ -88,8 +175,12 @@
     <section class="about1">
         <div class="container">
             <h2>Our brand</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indidunt labore et dolore magna aliqua. Ut enim ad minim veni, quis nostrud exercin tation ullamcon laboris nisi ut aliquip ex ea commo do consequat. Duis auteirur urenu dolor in reprehen deritin vo luptatevi elit esse cillumin reprehen deri tinv iolupta te veste lit esse cillum irure.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in ididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe citation ullamco laboris nisi uta.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indidunt labore et dolore
+                magna aliqua. Ut enim ad minim veni, quis nostrud exercin tation ullamcon laboris nisi ut aliquip ex ea
+                commo do consequat. Duis auteirur urenu dolor in reprehen deritin vo luptatevi elit esse cillumin
+                reprehen deri tinv iolupta te veste lit esse cillum irure.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in ididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe citation ullamco laboris nisi uta.</p>
             <div class="btn">read more</div>
         </div>
     </section>
@@ -106,5 +197,19 @@
             </div>
         </div>
     </section>
+
+    <section class="about3">
+        <div class="container">
+            <div class="text-box">
+                <img src="image/quotation.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor in didunt labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerci tation ullamcon laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4>Elena Troug</h4>
+                <p class="name">Architect</p>
+            </div>
+            <div class="btn-left"></div>
+            <div class="btn-right"></div>
+        </div>
+    </section>
 </body>
+
 </html>

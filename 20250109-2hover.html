@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+        .box{
+            transition: 1s;
+            width: 200px; height: 200px; border: 10px solid red;
+            background-color: rgba(255, 255, 0, 0.5); color: blueviolet;
+            font-size: 50px;
+        }
+        /* 
+            .box에 마우스가 올라갔을 때 == .box:hover
+        */
+        .box:hover{
+            transition: 1s;
+            background-color: rgba(255, 0, 0, 0.5); color: black;
+            font-size: 60px;
+        }
+
+        /* 마우스가 올라갔을때 transition 건것처럼 내려올때도 걸고싶으면 원래 박스에다가도 transition을 넣으면 됨. */
+    </style>
+</head>
+<body>
+    <h1>마우스를 올렸을 때 가상 선택자 : hover</h1>
+    <div class="box">박스</div>
+</body>
+</html>

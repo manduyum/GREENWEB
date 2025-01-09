@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{position: relative; margin: 0; padding: 0;}
+        img{display: block; width: 100%; height: 100%;} 
+        /* .item2{background: url(img_0109/img_cat.jpg) no-repeat cover; object-fit: cover;} */
+        h1{
+            text-align: center;
+        }
+        .container{
+            /* border: 10px solid black; */
+            width: 80%; margin: 0 auto;
+            display: grid; gap: 20px; grid-template-columns: repeat(2, 1fr);
+        }
+        .container .item{
+            border: 1px solid black;
+            background-color: beige;
+        }
+        .container .item p{
+            position: absolute; bottom: 0; left: 0;
+            padding: 30px;
+        }
+        .container .item img{
+            transition: 1s;
+            z-index: 10; top: 0;
+        }
+        .container .item:hover img{
+            top: -140px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hover</h1>
+    <div class="container">
+        <div class="item item1">
+            <img src="img_0109/img_dog.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corrupti sint cumque iusto tempore fugit dignissimos est, assumenda laborum ea qui, modi sit totam error et repudiandae nulla magni aperiam.</p>
+        </div>
+        <div class="item item2">
+            <img src="img_0109/img_cat.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corrupti sint cumque iusto tempore fugit dignissimos est, assumenda laborum ea qui, modi sit totam error et repudiandae nulla magni aperiam.</p>
+        </div>
+    </div>
+</body>
+</html>

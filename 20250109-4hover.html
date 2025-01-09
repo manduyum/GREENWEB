@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{position: relative;}
+        .box{
+            transition: 1s;
+            border: 10px solid #155E95;
+            background-color: #6A80B9;
+            width: 300px; height: 100px;
+            border-radius: 50px;
+            box-sizing: border-box;
+        }
+        .box .aa{
+            transition: 0.8s;
+            width: 50px; height: 50px; background-color: lightblue;
+            position: absolute; top: 10px; left: 10px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .box .bb{
+            transition: 0.8s;
+            position: absolute; left: 50%; top: 25px; color: white;
+        }
+
+        .box:hover{
+            background-color: beige; border-color: lightgray;
+        }
+        .box:hover .aa{
+            background-color: #7711FF; left: 210px;
+        }
+        .box:hover .bb{
+            left: 20px; color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="aa">aa</div>
+        <div class="bb">마우스 올리세요</div>
+    </div>
+</body>
+</html>

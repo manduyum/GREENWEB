@@ -1,0 +1,164 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Gotu&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 리셋 속성 */
+*{padding: 0; margin: 0; font-family: "Gotu", serif; position: relative;}
+li{list-style: none;}
+a{color: inherit; text-decoration: none; display: inline-block;}
+img{display: block; width: 100%;}
+
+
+/* 공통 스타일 */
+.container{
+    max-width: 1200px; width: 80%; margin: 0 auto;
+}
+header .page-title {
+    color: white;
+    position: fixed; background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; 
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 30px; z-index: 100; 
+    box-sizing: border-box;
+}
+header .page-title .header_left img{
+    height: 100%; object-fit: cover;
+}
+header .page-title .header_middle{
+    /* border: 1px solid black; */
+    display: flex; gap: 50px; justify-content: center; align-items: center;
+    text-transform: uppercase;
+}
+
+header .page-title .header_right i{
+    padding: 8px;
+}
+.title{
+    /* background-image: url(image/header.jpg);/ */
+    background-image: url(image/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    /* border: 10px solid red; */
+    height: 500px;
+    color: white;
+}
+
+.title h1{
+    position: absolute; top: 0; left: 0; 
+    /* 
+        position이랑 flex 줘도 안먹는 이유는 h1 크기 자체가 작았기 때문임
+        꼭 width랑 height 값을 줘야함
+    */
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    text-transform: uppercase; 
+    font-size: 100px;
+}
+@media(max-width:900px){
+    header .container {max-width: 600px; width: 60%;}
+    header .page-title ol{display: none;}
+    header .page-title .header_left{margin: 0 auto;}
+}
+
+.about1{
+    margin: 100px; text-align: center;
+}
+.about1 h2{
+    font-size: 30px;
+    text-transform: uppercase; margin-bottom: 20px;
+}
+.about1 p{
+    line-height: 30px;
+}
+.about1 .btn{
+    margin: 30px 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600 ;
+}
+
+.about2 .container{
+    display: grid; gap: 30px; grid-template-columns: repeat(2, 1fr);
+}
+.about2 .item h3{
+    background-color: white; font-size: 30px;;
+    text-transform: uppercase; font-weight: 200; 
+    width: 300px; height: 60px;
+    position: absolute; top: calc(50% - 30px); left: calc(50% - 150px);
+    display: flex; align-items: center; justify-content: center;
+}
+
+@media(max-width:900px){
+    .about2 .container{grid-template-columns: repeat(1, 1fr);}
+}
+
+.about3 {
+    margin-bottom: 100px;
+}
+.about3 .text-box img{
+    /* 원래 크기 그대로 사용하려면 width : auto; */
+    width: auto; margin: 200px auto 30px;
+}
+.about3 .text-box {
+    text-align: center; width: 60%; margin: 0 auto;
+}
+.about3 .text-box p{
+    margin-bottom: 20px; line-height: 30px;
+}
+.about3 .text-box h4{
+    text-transform: uppercase; font-size: 20px; font-weight: 200;
+    margin-bottom: 10px;
+}
+.about3 .btn-left{
+    width: 20px; height: 20px;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+    transform: rotate(45deg);
+    position: absolute; top: 50%; left: 0;
+}
+.about3 .btn-right{
+    width: 20px; height: 20px;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    transform: rotate(45deg);
+    position: absolute; top: 50%; right: 0;
+}
+
+footer{
+    /* border: 10px solid red;  */
+    background-color: rgba(250, 247, 245);
+    font-family: "Open Sans", serif;
+    padding: 100px 0;
+}
+footer .container_footer{
+    display: grid; gap: 100px; grid-template-columns: repeat(3, 1fr);
+    text-align: center; 
+}
+footer .container_footer h6{
+    text-transform: uppercase; font-size: 18px; font-weight: 300; margin-bottom: 10px;
+}
+
+footer .container_footer .about4_middle img{
+    width: auto; margin: 0 auto;
+}
+footer .container_footer .about4_middle p{
+    padding-top: 50px;
+}
+footer .container_footer p{
+    font-size: 12px; margin-bottom: 10px;
+}
+footer .container_footer .about4_right .input-box{
+    border-bottom: 1px solid black; padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+footer .container_footer .about4_right .input-box i{
+    position: absolute; top: 5px; right: 0; 
+}
+footer .container_footer .about4_right .input-box input{
+    border: none;
+}
+footer .container_footer .about4_right .sns i{
+    padding: 8px;
+}

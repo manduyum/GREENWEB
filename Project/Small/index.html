@@ -2,120 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>about page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/pop_heart.png">
     <style>
-        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
-        @import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
-        *{padding: 0; margin: 0; font-family: "Gotu", serif; position: relative;}
-        li{list-style: none;}
-        a{color: inherit; text-decoration: none; display: inline-block;}
-        img{display: block; width: 100%;}
-
-        .container{
-            max-width: 1200px; width: 90%; margin: 0 auto;
-        }
-
-        header{
-            /* background-image: url(image/header.jpg);/ */
-            background-image: url(image/header.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            object-fit: cover;
-            /* border: 10px solid red; */
-            height: 500px;
-        }
-        header .page-title {
-            position: fixed; background-color: rgba(0, 0, 0, 0.5);
-            width: 100%; display: flex; gap: 100px;
-            padding: 10px; z-index: 100;
-        }
-        header .page-title .logo img{
-            height: 100%; object-fit: cover;
-        }
-        header .page-title ol{
-            /* border: 1px solid black; */
-            display: flex; gap: 50px; justify-content: center; align-items: center;
-            color: white; text-transform: uppercase;
-        }
-        header h1{
-            color: white;
-            position: absolute; top: 0; left: 0; 
-            /* 
-                position이랑 flex 줘도 안먹는 이유는 h1 크기 자체가 작았기 때문임
-                꼭 width랑 height 값을 줘야함
-            */
-            width: 100%; height: 100%;
-            display: flex; justify-content: center; align-items: center;
-            text-transform: uppercase; 
-        }
-        @media(max-width:900px){
-            header .container {max-width: 600px; width: 60%;}
-            header .page-title ol{display: none;}
-            header .page-title .logo{margin: 0 auto;}
-        }
-
-        .about1{
-            margin: 100px; text-align: center;
-        }
-        .about1 h2{
-            font-size: 30px;
-            text-transform: uppercase; margin-bottom: 20px;
-        }
-        .about1 p{
-            line-height: 30px;
-        }
-        .about1 .btn{
-            margin: 30px 0;
-            text-decoration: underline;
-            text-transform: uppercase;
-            font-weight: 600 ;
-        }
-
-        .about2 .container{
-            display: grid; gap: 30px; grid-template-columns: repeat(2, 1fr);
-        }
-        .about2 .item h3{
-            background-color: white; font-size: 30px;;
-            text-transform: uppercase; font-weight: 200; 
-            width: 300px; height: 60px;
-            position: absolute; top: calc(50% - 30px); left: calc(50% - 150px);
-            display: flex; align-items: center; justify-content: center;
-        }
-
-        @media(max-width:900px){
-            .about2 .container{grid-template-columns: repeat(1, 1fr);}
-        }
-
-        .about3 .text-box img{
-            /* 원래 크기 그대로 사용하려면 width : auto; */
-            width: auto; margin: 200px auto 30px;
-        }
-        .about3 .text-box {
-            text-align: center; width: 60%; margin: 0 auto;
-        }
-        .about3 .text-box p{
-            margin-bottom: 20px; line-height: 30px;
-        }
-        .about3 .text-box h4{
-            text-transform: uppercase; font-size: 20px; font-weight: 200;
-            margin-bottom: 10px;
-        }
-        .about3 .btn-left{
-            width: 20px; height: 20px;
-            border-bottom: 3px solid gray;
-            border-left: 3px solid gray;
-            transform: rotate(45deg);
-            position: absolute; top: 50%; left: 0;
-        }
-        .about3 .btn-right{
-            width: 20px; height: 20px;
-            border-top: 3px solid gray;
-            border-right: 3px solid gray;
-            transform: rotate(45deg);
-            position: absolute; top: 50%; right: 0;
-        }
 
         /* 
         .about3{
@@ -137,18 +28,25 @@
 <body>
     <header>
         <div class="page-title">
-            <div class="logo">
+            <div class="header_left">
                 <img src="image/logo-light-img (1).png" alt="logo_light">
             </div>
-            <ol>
+            <ol class="header_middle">
                 <li>home</li>
                 <li>about us</li>
                 <li>shop</li>
                 <li>contact</li>
             </ol>
+            <div class="header_right">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-burger"></i>
+            </div>
         </div>
-        <h1>about</h1>
     </header>
+    <div class="title">
+        <h1>about</h1>
+    </div>
+   
 
     <section class="about1">
         <h2>Our brand</h2>
@@ -183,32 +81,31 @@
         </div>
     </section>
 
-    <section class="about4">
-        <div class="container_footer">
-            <div>
-                <h5>contact</h5>
-                <p>1368 Maryland Avenue NY</p>
-                <p>+312 445 4035</p>
-                <p>stockholm43@qode.com</p>
+    <footer>
+        <div class="container container_footer">
+            <div class="about4_left">
+                <h6>contact</h6>
+                <p><a href="" target="_blank">그린컴퓨터아카데미 인천부평점</a></p>
+                <p><a href="tel:032 512 3156">+82 032 512 3156</a></p>
+                <p><a href="mailto:green@academy.com">green@academy.com</a></p>
             </div>
-            <div>
+            <div class="about4_middle">
                 <div><img src="image/logo-dark-img (1).png" alt=""></div>
                 <p>Copyright © Qodeinteractive</p>
             </div>
-            <div>
+            <div class="about4_right">
                 <h6>Subscribe</h6>
-                <input type="text" placeholder="E-Mail Address">
-                <div class="btn-send">
+                <div class="input-box">
+                    <input type="text" placeholder="E-Mail Address">
                     <i class="fa-solid fa-share-from-square"></i>
                 </div>
-                <hr>
-                <div>
+                <div class="sns">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 </html>

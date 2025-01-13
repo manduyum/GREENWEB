@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css");
+        *{position: relative;margin: 0;padding: 0;}
+        img{display: block;width:100%;}
+        body{font-family: 'SUIT Variable', sans-serif;font-size: 14px;}
+        h4{font-size: 18px; font-weight: 200;margin-bottom: 10px;}
+        h1{text-align: center;line-height: 100px;}
+        p{opacity: 0.6;line-height: 20px;}
+        .container{
+            max-width: 1200px;margin:0 auto;width:80%;
+            display: grid; grid-template-columns: repeat(2,1fr);gap:30px;
+            color:white;
+        }
+        .item{border:1px solid red;}
+        .item .text-box{
+            background-color:#EB5A3C ;
+            display: flex;align-items: center;justify-content: center;
+            flex-direction: column;
+            position: absolute;left:0;top:0;
+            width:100%; height:100%
+        }
+        /* 마우스 올렸을떄 */
+        .item .text-box{opacity: 0;transition: 1s;}
+        .item:hover .text-box{opacity: 1;left:20px; top:20px;}
+    </style>
+</head>
+<body>
+    <h1>hover</h1>
+    <div class="container">
+        <div class="item">
+            <img src="img0113/1.jpg" alt="">
+            <div class="text-box">
+                <h4>올 봄과 여름에 익숙해질, 보이지 않는 신발</h4>
+                <p>때는 2~3년 전, 모두 신데렐라 유리 구두처럼 투명한 PVC </p>
+                <button> more </button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img0113/1.jpg" alt="">
+            <div class="text-box">
+                <h4>올 봄과 여름에 익숙해질, 보이지 않는 신발</h4>
+                <p>때는 2~3년 전, 모두 신데렐라 유리 구두처럼 투명한 PVC </p>
+                <button> more </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

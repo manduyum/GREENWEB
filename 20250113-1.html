@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        .box{
+            max-width: 500px; border: 10px solid red; margin: 100px auto;
+            height: 300px; 
+        }
+        .box1{overflow: visible;} /* 넘쳐도 보임 */
+        .box2{overflow: hidden;} /* 넘치는 부분은 보이지 않음 */
+        .box3{overflow: auto;} /* 넘치면 자동으로 스크롤이 생겨서 남은 부분도 볼 수 있음 */
+    </style>
+</head>
+<body>
+    <h1>넘치는 컨텐츠 처리(overflow)</h1>
+    <div class="box box1">
+        <h3>넘치는 컨텐츠:보이도록(기본값)</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempore harum pariatur enim illum, impedit beatae labore deserunt sed nobis maxime, vitae rerum aut corrupti expedita atque accusantium voluptates quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique sapiente dolores eveniet a veniam repudiandae molestiae ut delectus saepe rerum vel dignissimos? Explicabo voluptate vitae velit quas quo soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestias quae aut rerum adipisci reiciendis delectus quam eveniet vel maxime cupiditate odit sunt quod. Quos repellendus vero labore voluptatum veniam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores ipsa vitae. Minus quibusdam earum, quo ab voluptatum quae nemo et mollitia molestias ea architecto pariatur, sed sapiente hic necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci exercitationem illum. Eveniet ab itaque harum esse hic qui unde accusantium minima quasi! Ipsum assumenda consequuntur maiores accusamus repellat laudantium!
+        </p>
+    </div>
+    <div class="box box2">
+        <h3>넘치는 컨텐츠:숨기기(hidden)</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempore harum pariatur enim illum, impedit beatae labore deserunt sed nobis maxime, vitae rerum aut corrupti expedita atque accusantium voluptates quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique sapiente dolores eveniet a veniam repudiandae molestiae ut delectus saepe rerum vel dignissimos? Explicabo voluptate vitae velit quas quo soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestias quae aut rerum adipisci reiciendis delectus quam eveniet vel maxime cupiditate odit sunt quod. Quos repellendus vero labore voluptatum veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores ipsa vitae. Minus quibusdam earum, quo ab voluptatum quae nemo et mollitia molestias ea architecto pariatur, sed sapiente hic necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci exercitationem illum. Eveniet ab itaque harum esse hic qui unde accusantium minima quasi! Ipsum assumenda consequuntur maiores accusamus repellat laudantium!
+        </p>
+    </div>
+    <div class="box box3">
+        <h3>넘치는 컨텐츠:자동(auto)</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempore harum pariatur enim illum, impedit beatae labore deserunt sed nobis maxime, vitae rerum aut corrupti expedita atque accusantium voluptates quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, similique sapiente dolores eveniet a veniam repudiandae molestiae ut delectus saepe rerum vel dignissimos? Explicabo voluptate vitae velit quas quo soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, molestias quae aut rerum adipisci reiciendis delectus quam eveniet vel maxime cupiditate odit sunt quod. Quos repellendus vero labore voluptatum veniam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dolores ipsa vitae. Minus quibusdam earum, quo ab voluptatum quae nemo et mollitia molestias ea architecto pariatur, sed sapiente hic necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci exercitationem illum. Eveniet ab itaque harum esse hic qui unde accusantium minima quasi! Ipsum assumenda consequuntur maiores accusamus repellat laudantium!
+        </p>
+    </div>
+</body>
+</html>

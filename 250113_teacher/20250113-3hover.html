@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css");
+        *{position: relative;margin: 0;padding: 0;}
+        img{display: block;width:100%;}
+        body{font-family: 'SUIT Variable', sans-serif;font-size: 14px;}
+        h4{font-size: 18px; font-weight: 200;margin-bottom: 10px;}
+        h1{text-align: center;line-height: 100px;}
+        p{opacity: 0.6;line-height: 20px;}
+        .container{
+            max-width: 1200px;margin:0 auto;width:80%;
+            display: grid; grid-template-columns: repeat(2,1fr);gap:30px;
+            color:white;
+        }
+        .item{border:1px solid red;overflow: hidden;}
+        .item .text-box{
+            padding: 30px;box-sizing: border-box;
+            height:160px; background-color:#5D8736 ;
+            position: absolute;left:0;top:100%;        }
+        .item h4{ overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* 4줄까지 보이도록*/
+            -webkit-box-orient: vertical;}
+        .item p{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* 4줄까지 보이도록*/
+            -webkit-box-orient: vertical;        }
+        /*hover*/
+        .item .wrap{top:0;transition: 1s;}
+        .item:hover .wrap{top:-160px}
+    </style>
+</head>
+<body>
+    <h1>hover</h1>
+    <div class="container">
+        <div class="item">
+            <div class="wrap">
+                <img src="img0113/1.jpg" alt="">
+                <div class="text-box">
+                    <h4>올 봄과 여름에 익숙해질, 보이지 않는 신발</h4>
+                    <p>
+                        때는 2~3년 전, 모두 신데렐라 유리 구두처럼 투명한 PVC 소재의 네이키드 슈즈를 신었죠. 켄달 제너, 헤일리 비버, 지지 하디드, 제니퍼 로페즈, 심지어 아말 클루니까지 말이에요. 몇 시즌 동안의 유행을 거쳐 2023 S/S 런웨이까지 점령하는 걸 보며 제대로 열풍이 부는가 싶었죠. 그런데 메시 슈즈가 그 자리를 재빠르게 차지하며 형세가 뒤집혔습니다. 조용한 럭셔리와 미니멀리즘으로 모두가 기본/클래식 신발에 집중하는 분위기이기도 했고요.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrap">
+                <img src="img0113/1.jpg" alt="">
+                <div class="text-box">
+                    <h4>올 봄과 여름에 익숙해질, 보이지 않는 신발</h4>
+                    <p>
+                        때는 2~3년 전, 모두 신데렐라 유리 구두처럼 투명한 PVC 소재의 네이키드 슈즈를 신었죠. 켄달 제너, 헤일리 비버, 지지 하디드, 제니퍼 로페즈, 심지어 아말 클루니까지 말이에요. 몇 시즌 동안의 유행을 거쳐 2023 S/S 런웨이까지 점령하는 걸 보며 제대로 열풍이 부는가 싶었죠. 그런데 메시 슈즈가 그 자리를 재빠르게 차지하며 형세가 뒤집혔습니다. 조용한 럭셔리와 미니멀리즘으로 모두가 기본/클래식 신발에 집중하는 분위기이기도 했고요.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{border:3px solid red; max-width:300px; margin: 0 auto 100px;}
+        .box1{writing-mode: vertical-lr;}
+        .box2{writing-mode: vertical-rl;}
+        .box3{white-space: nowrap;}
+        .box4{word-break: keep-all;}
+        .box5 h2{ 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .box6{max-width: 1000px}
+        .box6 h2{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* 4줄까지 보이도록*/
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        <h2>글자 세로로작성ABC</h2>
+    </div>
+    <div class="box box2">
+        <h2>글자 세로로 작성 <br>여러줄 되었을대 확인</h2>
+        <h2>orem Ipsum is <br>simply dummy text </h2>
+    </div>
+    <div class="box box3">
+        <h2>줄변경 안되도록 하는 CS white-space</h2>
+    </div>
+    <div class="box box4">
+        <h2>줄변경 안하기 특별 이벤트 겨울시즌 세일</h2>
+    </div>
+    <div class="box box5">
+        <h2>글자 넘치면 생략하기 글자 넘치면 생략하기</h2>
+    </div>
+    <div class="box box6">
+        <h2>3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기3줄이상 글자는 생략하기</h2>
+    </div>
+</body>
+</html>

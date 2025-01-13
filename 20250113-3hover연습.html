@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover 연습</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/variable/woff2/SUIT-Variable.css");
+
+        * {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            font-family: 'SUIT Variable', sans-serif;
+            font-size: 14px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 200;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        p {
+            opacity: 0.6;
+            line-height: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            color: white;
+        }
+
+        .container .item {
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        /* .container .item .wrap{border: 10px solid blue; height: calc(100% - 110px);} */
+        .item .wrap {
+            top: 0;
+            transition: 1s;
+        }
+
+        .item:hover .wrap {
+            top: -150PX;
+        }
+
+        .container .item .wrap .text-box {
+            padding: 30px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: 100%;
+            height: 150px;
+            background-color: #EB5A3C;
+        }
+
+        .container .item h4 {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+        }
+
+        .container .item p {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hover</h1>
+    <div class="container">
+        <div class="item">
+            <div class="wrap">
+                <img src="img_0109/img_cat.jpg" alt="">
+                <div class="text-box">
+                    <h4>올 봄과 여름에 익숙해질 의자와 고양이</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat tempora dolorem sunt libero
+                        nam, nihil inventore ipsa, vero nulla ducimus quibusdam. Sapiente earum nesciunt quis quasi sit?
+                        Praesentium, officiis quos?</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrap">
+                <img src="img_0109/img_CAT.jpg" alt="">
+                <div class="text-box">
+                    <h4>올 봄과 여름에 익숙해질 의자와 고양이</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat tempora dolorem sunt libero
+                        nam,
+                        nihil inventore ipsa, vero nulla ducimus quibusdam. Sapiente earum nesciunt quis quasi sit?
+                        Praesentium, officiis quos?</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -18,7 +18,7 @@
        h3{}
        h4{}
        h5{}
-       h6{}
+       h6{font-size: 20px; color: #999999; font-weight: 200;}
        p{opacity: 0.6;font-size: 14px;line-height: 22px; margin-bottom: 10px;}
 
        input{display: block; 
@@ -89,6 +89,17 @@
             header .fa-bag-shopping{position: absolute;right:0}
        }
 
+
+
+
+
+
+
+
+
+
+
+
        /* 어바웃 */
        .about1{
            text-align: center;
@@ -138,3 +149,31 @@
            transform: rotate(45deg) translate(0,-50%);
            position: absolute;right:0;top:50%;
        }
+
+
+       /* shop page */
+
+       .page-title.shop{}
+       .page-title.shop h1{color: #333333; background-color: #F5ECD5;}
+       .shop1{padding-top: 120px; padding-bottom: 130px;}
+       .shop1 .container{
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;
+       }
+       .shop1 .item{}
+       .shop1 .item .img-box{margin-bottom: 40px;}
+       .shop1 .item .color{
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-color: #F5ECD5;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: 0.5s;
+       }
+       .shop1 .item:hover .color{opacity: 1;}
+       .shop1 .item .text-box{text-align: center;}
+       .shop1 .item .text-box h6{margin-bottom: 10px;}
+
+       @media(max-width:1400px){
+            .shop1 .container{grid-template-columns: repeat(3, 1fr);}
+       }
+       @media(max-width:900px){
+        .shop1 .container{grid-template-columns: repeat(2, 1fr);}
+   }

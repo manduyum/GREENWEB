@@ -162,3 +162,34 @@ footer .container_footer .about4_right .input-box input{
 footer .container_footer .about4_right .sns i{
     padding: 8px;
 }
+
+/* shop page */
+
+.page-title.shop{}
+.page-title.shop h1{
+    color: #333333; background-color: #F5ECD5;
+    height: 400px; 
+    display: flex; align-items: center; justify-content: center;
+}
+.shop1{padding-top: 120px; padding-bottom: 130px;}
+.shop1 .container{
+     display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;
+}
+.shop1 .item{}
+.shop1 .item .img-box{margin-bottom: 40px;}
+.shop1 .item .color{
+     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+     background-color: #F5ECD5;
+     display: flex; align-items: center; justify-content: center;
+     opacity: 0; transition: 0.5s;
+}
+.shop1 .item:hover .color{opacity: 1;}
+.shop1 .item .text-box{text-align: center;}
+.shop1 .item .text-box h6{margin-bottom: 10px;}
+
+@media(max-width:1400px){
+     .shop1 .container{grid-template-columns: repeat(3, 1fr);}
+}
+@media(max-width:900px){
+ .shop1 .container{grid-template-columns: repeat(2, 1fr);}
+}

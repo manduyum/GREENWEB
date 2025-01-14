@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{position: relative;}
+        .box{
+            border: 10px solid black; width: 300px; height: 300px;
+        }
+        .box .cir {
+            width: 50px; height: 50px; background-color: gold;
+            position: absolute; top: 0; left: 0;
+            border-radius: 50%;
+            /* 글씨 가운데 정렬 */
+            display: flex; align-items: center; justify-content: center;
+        }
+        .box:hover .cir{
+            top: calc(100% - 50px); left: calc(100% - 50px);
+            background-color: brown;
+        }
+        /* transition 기본값 */
+        .box .cir{
+            transition-property: all;
+            transition-duration: 1s; /* 꼭 작성해야함 기본값 없음. */
+            transition-delay: 0s; /* #초뒤에 transition을 실행해줘 */
+            transition-timing-function: ease; /* 속도 */
+        }
+        /* transition 한번에 합치기 */
+        .box:hover .cir1{
+            /* transition: all 3s 0s ease; */
+            transition: top 1s, left 1s 1s, background-color 1s 2s ;
+        }
+    </style>
+</head>
+<body>
+    <h1>transition(중간단계):시간</h1>
+    <div class="box">
+        <div class="cir">원</div>
+    </div>
+    <div class="box">
+        <div class="cir cir1">원</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* .back{width: 50%; margin: 0 auto;} */
+        * {
+            position: relative;
+        }
+
+        .box {
+            border: 10px solid black;
+            width: 500px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 25px;
+            position: absolute;
+            left: calc(50% - 250px);
+        }
+        .text-box {
+            border: 1px solid black;
+            margin: 0 auto;
+            animation-name: slide;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 0.5s; */
+            display: flex;
+            width: 120%;
+            height: 50px;
+            flex-wrap: nowrap;
+        }
+        @keyframes slide {
+            0% {left: 0;}
+            100% {left: -120%; }
+        }
+
+        /* 선생님 코드 */
+        .box1{
+            border: 10px solid red;
+            width: 800px; height: 100px; margin: 0 auto;
+        }
+        .text-box1{
+            font-size: 79px;
+            white-space: nowrap;
+            width: 1700px; border: 1px solid black;
+            position: absolute; left: 0;
+            animation-name: bb;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            /* 애니메이션을 일정한 속도로 움직이게 하는 옵션*/
+        }
+        @keyframes bb{
+            0%{left: 0;}
+            100%{left: -850px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="text-box">
+            글자가 계속 지나가도록 글자가 계속 지나가도록
+        </div>
+    </div>
+    <div class="box1">
+        <div class="text-box1">
+            글자가 계속 지나가도록 글자가 계속 지나가도록
+        </div>
+    </div>
+</body>
+
+</html>

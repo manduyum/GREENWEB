@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* animation : 움직이는 효과 */
+        *{position: relative;}
+        .box{
+            width: 100px; height: 100px;
+            background-color: red;
+            animation-name: aa; /* 적용 할 애니메이션 이름 */
+            animation-duration: 2s; /* 적용 할 애니메이션 시간 */
+            animation-iteration-count: 10; /* 반복 횟수(기본값 1) */
+            animation-direction: alternate; /* 애니메이션 방향(기본값 :normal/정방향) */
+            /* direction : alternate >> 반대로 돌아옴 */
+            animation-delay: 0s; /* 지연 시간 */
+            animation-fill-mode: forwards; /* 애니메이션 끝나고  */
+            /* fill-mode: backwwards >>기본값  */
+            animation-timing-function: ease; /* 가속도 */
+        }
+        /* 애니메이션 만들기 */
+        @keyframes aa{
+            0%{left: 0;}
+            100%{left: 500px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">박스</div>
+</body>
+</html>

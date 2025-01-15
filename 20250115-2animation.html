@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        /* animation : 움직이는 효과 */
+        *{position: relative;}
+        .box{
+            width: 100px; height: 100px;
+            background-color: red;
+            animation-name: aa;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+
+        }
+        /* 애니메이션 만들기 */
+        @keyframes aa{
+            0%{left: 0; top: 0;}
+            12.5%{background-color: orange;}
+            25%{left: 500px; top: 0; background-color: yellow;}
+            37.5%{background-color: yellowgreen;}
+            50%{left: 500px; top: 500px; background-color: green;}
+            67.5%{background-color: lightblue;}
+            75%{left: 0; top: 500px; background-color: blue;}
+            87.5%{background-color: violet;}
+            100%{left: 0; top: 0;}
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">박스</div>
+</body>
+</html>

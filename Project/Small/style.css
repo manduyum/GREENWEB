@@ -99,6 +99,7 @@ header .page-title .header_right i{
 }
 
 .about2 .container{
+    margin-top: 100px;
     display: grid; gap: 30px; grid-template-columns: repeat(2, 1fr);
 }
 .about2 .item h3{
@@ -194,12 +195,12 @@ footer .container_footer .about4_right .sns i{
 }
 
 .shop1{padding-top: 120px; padding-bottom: 130px;}
-.shop1 .container{
+.container_product{
      display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;
+     margin-bottom: 100px;
 }
-.shop1 .item{}
-.shop1 .item .img-box{margin-bottom: 40px;}
-.shop1 .item .color{
+.item .img-box{margin-bottom: 40px;}
+.item .color{
      position: absolute; top: 0; left: 0; width: 100%; height: 100%;
      background-color: #B3A398; color: white; text-transform: uppercase;
      display: flex; align-items: center; justify-content: center;
@@ -247,3 +248,55 @@ textarea:focus{border-color: black;}
     .contact2 .container{grid-template-columns: repeat(1, 1fr);}
     .contact2 .box5{grid-column: auto;}
 }
+
+/* index page */
+.title_index{background-image: url(image/main-rev-img-1\ \(1\).jpg); }
+.btn-right {margin-bottom: 100px;}
+
+.main .container{grid-template-columns: repeat(3, 1fr); overflow: hidden;}
+.text-box{/* border: 1px solid black; */ height: 70px; }
+.text-box .hover_event{overflow: hidden; }
+.text-box .hover_event div{
+    position: absolute; top: 0; left: -100px;
+    text-decoration: underline; transition: 0.3s;
+}
+.text-box .hover_event p{
+    top: 0; left: 0; transition: 0.3s;
+}
+.item:hover .text-box .hover_event div{
+    top: 0; left: calc(50% - 40px); 
+}
+.item:hover .text-box .hover_event p{
+    top: 0; left: 200px; 
+}
+
+/* .main .item .text-box div{
+    position: absolute; top: 100%; left: -100%;
+    text-decoration: underline; 
+    transition: 1s;
+}
+.main .item .text-box p{
+    position: absolute; top: 0; left: 0;
+}
+
+.main .item:hover .text-box div{
+    left: calc(50% - 40px); transition: 1s;
+}
+.main .item:hover .text-box p{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

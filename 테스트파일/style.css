@@ -222,7 +222,8 @@
    }
 
    @media(max-width:1000px) {
- 
+        header .ham{display: block;}
+        header .menu{display: none;}
    }
 
    .top-btn {

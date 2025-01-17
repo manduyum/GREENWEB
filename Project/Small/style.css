@@ -95,16 +95,19 @@ header .page-title .header_right i{
 }
 
 .about1{
-    margin: 100px; text-align: center;
+    margin: 100px auto; text-align: center; width: 50%;
 }
 .about1 p{
-    line-height: 30px; max-width: 1200px; width: 80%; margin: 0 auto;
+    line-height: 30px; max-width: 1200px; margin: 0 auto;
 }
 .about1 .btn{
     margin: 30px 0;
     text-decoration: underline;
     text-transform: uppercase;
     font-weight: 600 ;
+}
+@media(max-width:1000px){
+    .about1{width: 80%;}
 }
 
 .about2 .container{
@@ -230,7 +233,7 @@ footer .container_footer .about4_right .sns i{
 /* contact page */
 .title_contact{background-image: url(image/sub-page-bg2.jpg); }
 .contact1{padding-top: 120px; padding-bottom: 120px;}
-.contact1 .container{display: flex;}
+.contact1 .container{display: flex; width: 90%;}
 .contact1 .item{width: 33.33%;}
 .contact1 .container .item p{
     font-size: 14px; margin-bottom: 10px;
@@ -284,7 +287,7 @@ textarea:focus{border-color: black;}
     top: 0; left: calc(50% - 40px); 
 }
 .item:hover .text-explain .hover_event p{
-    top: 0; left: 200px; 
+    top: 0; left: 3000px; 
 }
 
 .main_middle_part {height: 400px; margin-bottom: 100px;}
@@ -297,6 +300,10 @@ textarea:focus{border-color: black;}
 .special_offer {margin-top: 100px;}
 @media(max-width:1000px){
     .main_middle_part .bg{height: 100%; object-fit: cover;}
+    .main .container{grid-template-columns: repeat(2, 1fr);}
+}
+@media(max-width:700px){
+    .main .container{grid-template-columns: repeat(1, 1fr);}
 }
 
 /* .main .item .text-box div{

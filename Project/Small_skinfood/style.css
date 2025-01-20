@@ -1,0 +1,357 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+/* 리셋 속성 */
+*{padding: 0; margin: 0; font-family: "Montserrat", serif; position: relative;}
+body{text-align: center;}
+li{list-style: none;}
+a{color: inherit; text-decoration: none; display: inline-block;}
+img{display: block; width: 100%;}
+h1{text-transform: uppercase; font-size: 90px; font-family: "Kanit", serif;}
+h2{font-size: 40px; margin-bottom: 30px; text-transform: uppercase; font-weight: 200;}
+h4{text-transform: uppercase; font-size: 20px; font-weight: 200; color: #999999;}
+h6{
+    font-size: 18px; color: #999999; font-weight: 200;
+    text-transform: uppercase; margin-bottom: 10px;
+}
+p{font-weight: 300; line-height: 20px; color: #000000;}
+input{display: block; 
+    width:100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999999;
+    background-color: transparent;
+    }
+
+
+/* 공통 스타일 */
+body{background-color: rgba(250, 247, 245);}
+
+.container{
+    max-width: 1200px; width: 80%; margin: 0 auto;
+}
+header .page-title {
+    color: white;
+    position: fixed; background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; 
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 10px 30px; z-index: 100; 
+    box-sizing: border-box;
+}
+header .page-title .header_left img{
+    height: 100%; object-fit: cover;
+}
+header .page-title .header_middle{
+    /* border: 1px solid black; */
+    display: flex; gap: 50px; justify-content: center; align-items: center;
+    text-transform: uppercase;
+}
+header .page-title .header_middle li .underline{
+   border: 1px solid white;
+    top: 0; left: 0; transform: scale(0); transition: 0.5s;
+}
+header .page-title .header_middle li:hover .underline{
+    top: 0; left: 0; width: 100%; transform: scale(1); transition: 0.5s;
+    /* display: block; */
+}
+
+header .page-title .header_right i{
+    padding: 8px;
+}
+.title{
+    /* background-image: url(image/header.jpg);/ */
+    background-image: url(img/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    /* border: 10px solid red; */
+    height: 500px;
+    color: white;
+}
+
+
+.title h1{
+    position: absolute; top: 0; left: 0; 
+    /* 
+        position이랑 flex 줘도 안먹는 이유는 h1 크기 자체가 작았기 때문임
+        꼭 width랑 height 값을 줘야함
+    */
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+    text-transform: uppercase; 
+    font-size: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width:1000px){
+    header .container {max-width: 600px; width: 60%;}
+    header .page-title ol li{display: none;}
+    header .page-title .header_right{width: 100%;display: flex; justify-content: space-between;}
+    header .page-title .header_left{top: 0; left: 50%; margin: 0 auto;}
+}
+@media(max-width:1000px){
+    .title h1{font-size: 40px;}
+    h1{font-size: 40px;}
+}
+
+.about1{
+    margin: 100px auto; text-align: center; width: 60%; font-family: "Noto Sans", serif;
+}
+.about1 h3{font-size: 25px; margin-bottom: 20px;}
+.about1 p{
+    line-height: 30px; max-width: 1200px; margin: 0 auto 20px; width: 70%; font-family: "Jua", serif;
+    font-weight: 300;
+} 
+.about1 .btn{
+    margin: 30px 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600 ;
+}
+@media(max-width:1000px){
+    .about1{width: 80%;}
+}
+
+.about2{
+    /* border: 10px solid red; */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.about2 .container{
+    margin-top: 100px;
+    display: grid; gap: 30px; grid-template-columns: repeat(4, 1fr); padding-bottom: 50px;
+}
+/* .about2 .item{border: 1px solid black;} */
+.about2 .item h4{
+    background-color: rgba(255, 255, 0, 0); font-size: 30px;;
+    text-transform: uppercase; font-weight: 200; color: black;
+    width: 300px; font-size: 20px;
+    position: absolute; bottom: calc(0 - 10px); left: calc(50% - 150px);
+    display: flex; align-items: center; justify-content: center;
+}
+
+@media(max-width:1000px){
+    .about2 .container{grid-template-columns: repeat(1, 1fr);}
+}
+
+.about3 {
+    margin: 100px auto;
+}
+.about3 .text-box img{
+    /* 원래 크기 그대로 사용하려면 width : auto; */
+    margin: 200px auto 30px;
+}
+.about3 .text-box {
+    text-align: center; width: 60%; margin: 0 auto;
+}
+.about3 .text-box p{
+    margin-bottom: 20px; line-height: 30px; 
+}
+.about3 .text-box h4{
+    margin-bottom: 10px;
+}
+.about3 .btn-left{
+    width: 20px; height: 20px;
+    border-bottom: 3px solid gray;
+    border-left: 3px solid gray;
+    transform: rotate(45deg);
+    position: absolute; top: 50%; left: 0;
+}
+.about3 .btn-right{
+    width: 20px; height: 20px;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    transform: rotate(45deg);
+    position: absolute; top: 50%; right: 0;
+}
+
+footer{
+    /* border: 10px solid red;  */
+    background-color: rgba(250, 247, 230, 0.5);
+    font-family: "Open Sans", serif;
+    padding: 100px 0;
+}
+footer .container_footer{
+    display: grid; gap: 100px; grid-template-columns: repeat(3, 1fr);
+    text-align: center; 
+}
+
+footer .container_footer .about4_middle img{
+    width: auto; margin: 0 auto;
+}
+footer .container_footer .about4_middle p{
+    padding-top: 50px;
+}
+
+footer .container_footer p{
+    font-size: 14px; margin-bottom: 10px;
+}
+footer .container_footer .about4_right .input-box{
+    border-bottom: 1px solid black; padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+footer .container_footer .about4_right .input-box i{
+    position: absolute; top: 5px; right: 0; 
+}
+footer .container_footer .about4_right .input-box input{
+    border: none;
+}
+footer .container_footer .about4_right .sns i{
+    padding: 8px;
+}
+@media(max-width:1000px){
+    footer .container_footer > div{margin-bottom: 20px;}
+    footer .container_footer{grid-template-columns: repeat(1, 1fr); width: 50%;}
+}
+
+
+/* shop page */
+
+.page-title.shop{}
+.page-title.shop h1{
+    color: white; background: url(img/main.jpg);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    height: 500px;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.shop1{padding-top: 120px; padding-bottom: 130px;}
+.container_product{
+     display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;
+     margin-bottom: 100px;
+}
+.item .img-box{margin-bottom: 40px;}
+.item .color{
+     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+     background-color: #B3A398; color: white; text-transform: uppercase;
+     display: flex; align-items: center; justify-content: center;
+     opacity: 0; transition: 0.5s;
+}
+.shop1 .item:hover .color{opacity: 1;}
+.shop1 .item .text-box{text-align: center;}
+.shop1 .item .text-box h6{margin-bottom: 20px;}
+
+@media(max-width:1400px){
+     .shop1 .container{grid-template-columns: repeat(3, 1fr);}
+}
+@media(max-width:1000px){
+ .shop1 .container{grid-template-columns: repeat(2, 1fr);}
+}
+
+/* contact page */
+.title_contact{background-image: url(img/contactimg.jpg); }
+.contact1{padding-top: 120px; padding-bottom: 120px;}
+.contact1 .container{display: flex; width: 90%;}
+.contact1 .item{width: 33.33%;}
+.contact1 .container .item p{
+    font-size: 14px; margin-bottom: 10px;
+}
+.contact2 {padding-bottom: 120px;}
+.contact2 .container{
+    max-width: 800px; 
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;
+}
+.contact2 .box{
+    border: none;
+}
+.contact2 .box5{grid-column: 2 span;}
+
+textarea{
+    display: block; outline: none; border: none;
+    width: 100%; height: 200px; padding: 10px; box-sizing: border-box;
+    border-bottom: 1px solid #999999; 
+}
+textarea:focus{border-color: black;}
+@media(max-width:1000px){
+    .contact1 .container{display: block;}
+    .contact1 .item{width: 100%; margin-bottom: 30px;}
+    .contact2 .container{grid-template-columns: repeat(1, 1fr);}
+    .contact2 .box5{grid-column: auto;}
+}
+
+/* index page */
+.title_index{
+    background-image: url(img/index_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.title_index p{
+    display: flex; justify-content: center; align-items: center; 
+    width: 100%; height: 100%;
+    top: 70px; color: white;
+    text-decoration: underline;
+    
+}
+.btn-right {margin-bottom: 100px;}
+
+.main .container{grid-template-columns: repeat(3, 1fr); overflow: hidden;}
+.text-explain{/* border: 1px solid black; */ height: 70px; }
+.text-explain .hover_event{overflow: hidden; }
+.text-explain .hover_event div{
+    position: absolute; top: 0; left: -100px;
+    text-decoration: underline; transition: 0.3s;
+}
+.text-explain .hover_event p{
+    top: 0; left: 0; transition: 0.3s;
+}
+.item:hover .text-explain .hover_event div{
+    top: 0; left: calc(50% - 40px); 
+}
+.item:hover .text-explain .hover_event p{
+    top: 0; left: 3000px; 
+}
+
+.main_middle_part {height: 400px; margin-bottom: 100px;}
+.main_middle_part.bg{height: 100%; object-fit: cover;}
+.main_middle_part.play{
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+.special_offer {margin-top: 100px;}
+@media(max-width:1000px){
+    .main_middle_part .bg{height: 100%; object-fit: cover;}
+    .main .container{grid-template-columns: repeat(2, 1fr);}
+}
+@media(max-width:700px){
+    .main .container{grid-template-columns: repeat(1, 1fr);}
+}
+
+/* .main .item .text-box div{
+    position: absolute; top: 100%; left: -100%;
+    text-decoration: underline; 
+    transition: 1s;
+}
+.main .item .text-box p{
+    position: absolute; top: 0; left: 0;
+}
+
+.main .item:hover .text-box div{
+    left: calc(50% - 40px); transition: 1s;
+}
+.main .item:hover .text-box p{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
